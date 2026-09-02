@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <!-- Recursos usados Google Fonts fuente Manrope, Bootstrap CSS V.S 5.3.8 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pablo Olivero">
@@ -11,14 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Viajes Chile</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg text-white px-4 fixed-top">
-        <div class="container">
-            <a class="navbar-brand ms-2 nav_titulo" href="#"><img src="assets/img/viajes.svg" alt="Logo"
-                    class="logo-img"><span>Viajes Chile</span></a>
+    <!-- Barra de navegación, fijada en la parte superior -->
+    <nav class="navbar navbar-expand-lg px-4 fixed-top">
+        <div class="container-sm">
+            <a class="navbar-brand ms-2" href="#carrusel"><img src="assets/img/viajes.svg" class="logo-img"
+                    alt="Logo"><span class="nav-titulo">Viajes Chile</span></a>
             <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,7 +37,8 @@
             </div>
         </div>
     </nav>
-    <main id="carrusel" class="container">
+    <!-- Carrusel con imagenes -->
+    <main id="carrusel" class="container-fluid px-0">
         <header>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner img-fluid">
@@ -60,117 +64,131 @@
                 </button>
             </div>
         </header>
-        <section id="quienes-somos" class="container my-5 d-none d-md-block">
-            <h2 class="text-white mb-4">QUIÉNES SOMOS</h2>
-            <div class="row text-white text-start">
-                <div class="col-md-4">
-                    <div class="bg-info text-center py-2 mb-3">
-                        <i class="fa-solid fa-plane fa-2x"></i>
+        <!-- Sección ¿Quiénes somos? -->
+        <section id="quienes-somos" class="pt-5 pb-0 d-none d-md-block">
+            <div class="container">
+                <h3 class="text-white mt-2 mb-5 text-center">¿QUIÉNES SOMOS?</h3>
+                <div class="row text-white text-start">
+                    <div class="col-md-4 h-100">
+                        <div class="bg-info text-center py-2 mb-3">
+                            <i class="fa-solid fa-plane fa-2x"></i>
+                        </div>
+                        <p>Somos una agencia apasionada por descubrir rincones fascinantes del planeta, ofreciendo
+                            experiencias únicas y personalizadas para cada tipo de viajero. Nuestro compromiso es
+                            brindarte total seguridad, comodidad y servicio excepcional desde el primer instante. Te
+                            acompañamos en cada paso del camino, diseñando grandes aventuras que recordarás durante toda
+                            tu vida.</p>
                     </div>
-                    <p>Somos una agencia apasionada por descubrir rincones fascinantes del planeta, ofreciendo
-                        experiencias únicas y personalizadas para cada tipo de viajero. Nuestro compromiso es
-                        brindarte total seguridad, comodidad y servicio excepcional desde el primer instante. Te
-                        acompañamos en cada paso del camino, diseñando grandes aventuras que recordarás durante toda
-                        tu vida.</p>
-                </div>
-                <div class="col-md-4">
-                    <p>Creemos firmemente que viajar transforma vidas, abre mentes y conecta culturas, por lo que
-                        creamos rutas exclusivas llenas de momentos muy inolvidables. Trabajamos junto a expertos
-                        locales para garantizar la máxima autenticidad, calidad y cuidado de cada detalle. Tu
-                        satisfacción es nuestra prioridad absoluta, convirtiendo tus vacaciones en recuerdos
-                        perfectos.</p>
-                    <div class="bg-info text-center py-2 mt-3">
-                        <i class="fa-solid fa-mountain fa-2x"></i>
+                    <div class="col-md-4 h-100">
+                        <p>Creemos firmemente que viajar transforma vidas, abre mentes y conecta culturas, por lo que
+                            creamos rutas exclusivas llenas de momentos muy inolvidables. Trabajamos junto a expertos
+                            locales para garantizar la máxima autenticidad, calidad y cuidado de cada detalle. Tu
+                            satisfacción es nuestra prioridad absoluta, convirtiendo tus vacaciones en recuerdos
+                            perfectos.</p>
+                        <div class="bg-info text-center py-2 mt-3">
+                            <i class="fa-solid fa-mountain fa-2x"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="bg-info text-center py-2 mb-3">
-                        <i class="fa-solid fa-route fa-2x"></i>
+                    <div class="col-md-4 h-100">
+                        <div class="bg-info text-center py-2 mb-3">
+                            <i class="fa-solid fa-route fa-2x"></i>
+                        </div>
+                        <p>Con una trayectoria sólida en el sector turístico global, diseñamos proyectos de viaje
+                            responsables que superan por completo tus expectativas más altas. Nos encargamos de toda la
+                            logística para que solo te enfoques en disfrutar, relajarte y descubrir hermosos paisajes.
+                            Explora el mundo entero con la confianza de estar acompañados.</p>
                     </div>
-                    <p>Con una trayectoria sólida en el sector turístico global, diseñamos proyectos de viaje
-                        responsables que superan por completo tus expectativas más altas. Nos encargamos de toda la
-                        logística para que solo te enfoques en disfrutar, relajarte y descubrir hermosos paisajes.
-                        Explora el mundo entero con la confianza de estar acompañados.</p>
                 </div>
             </div>
         </section>
-        <section id="destacados" class="container my-5">
-            <h2 class="text-center text-white mb-4">DESTACADOS</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 bg-info text-white">
-                        <img src="assets/img/card1.jpg" class="card-img-top" alt="Torres del Paine">
-                        <div class="card-body">
-                            <h5 class="card-title">Torres del Paine</h5>
-                            <p class="card-text">Aventúrate en el corazón de la Patagonia chilena. Maravíllate con
-                                imponentes macizos de granito, lagos de color turquesa y glaciares milenarios en rutas
-                                de trekking únicas.</p>
+        <!-- Sección de destacados -->
+        <section id="destacados" class="pt-5 pb-5">
+            <div class="container">
+                <h3 class="text-center text-white mb-5">DESTACADOS</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 bg-info text-white">
+                            <img src="assets/img/card1.jpg" class="card-img-top" alt="Torres del Paine">
+                            <div class="card-body">
+                                <h5 class="card-title">Torres del Paine</h5>
+                                <p class="card-text">Aventúrate en el corazón de la Patagonia chilena. Maravíllate con
+                                    imponentes macizos de granito, lagos de color turquesa y glaciares milenarios en
+                                    rutas
+                                    de trekking únicas.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 bg-info text-white">
-                        <img src="assets/img/card2.jpg" class="card-img-top" alt="Lagunas Altiplánicas">
-                        <div class="card-body">
-                            <h5 class="card-title">Lagunas Altiplánicas</h5>
-                            <p class="card-text">Contempla el asombroso reflejo de las montañas sobre las
-                                místicas lagunas altiplánicas. Un espectáculo visual único donde el cielo y la tierra se
-                                unen mágicamente.</p>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 bg-info text-white">
+                            <img src="assets/img/card2.jpg" class="card-img-top" alt="Lagunas Altiplánicas">
+                            <div class="card-body">
+                                <h5 class="card-title">Lagunas Altiplánicas</h5>
+                                <p class="card-text">Contempla el asombroso reflejo de las montañas sobre las
+                                    místicas lagunas altiplánicas. Un espectáculo visual único donde el cielo y la
+                                    tierra se
+                                    unen mágicamente.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 bg-info text-white">
-                        <img src="assets/img/card3.jpg" class="card-img-top" alt="Salar de Atacama">
-                        <div class="card-body">
-                            <h5 class="card-title">Salar de Atacama</h5>
-                            <p class="card-text">Explora las extensas costras de sal que dan forma al impresionante
-                                Salar de Atacama. Un entorno desértico fascinante rodeado de una belleza natural
-                                verdaderamente imponente.</p>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 bg-info text-white">
+                            <img src="assets/img/card3.jpg" class="card-img-top" alt="Salar de Atacama">
+                            <div class="card-body">
+                                <h5 class="card-title">Salar de Atacama</h5>
+                                <p class="card-text">Explora las extensas costras de sal que dan forma al impresionante
+                                    Salar de Atacama. Un entorno desértico fascinante rodeado de una belleza natural
+                                    verdaderamente imponente.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 bg-info text-white">
-                        <img src="assets/img/card4.jpg" class="card-img-top" alt="Carretera Austral">
-                        <div class="card-body">
-                            <h5 class="card-title">Carretera Austral</h5>
-                            <p class="card-text">Recorre la ruta escénica más espectacular del sur de Chile. Un viaje
-                                rodeado de densos bosques nativos, ríos indómitos, fiordos profundos y una naturaleza
-                                completamente virgen.</p>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 bg-info text-white">
+                            <img src="assets/img/card4.jpg" class="card-img-top" alt="Carretera Austral">
+                            <div class="card-body">
+                                <h5 class="card-title">Carretera Austral</h5>
+                                <p class="card-text">Recorre la ruta escénica más espectacular del sur de Chile. Un
+                                    viaje
+                                    rodeado de densos bosques nativos, ríos indómitos, fiordos profundos y una
+                                    naturaleza
+                                    completamente virgen.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <section id="contacto" class="container my-5">
-        <h2 class="text-center mb-4">CONTACTO</h2>
-        <div class="row justify-content-center">
-            <div class="col-10 col-md-12">
-                <form>
-                    <div class="mb-3">
-                        <label for="nombreInput" class="form-label fw-bold text-white">Nombre</label>
-                        <input type="text" class="form-control" id="nombreInput" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="asuntoInput" class="form-label fw-bold text-white">Asunto</label>
-                        <input type="text" class="form-control" id="asuntoInput" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensajeInput" class="form-label fw-bold text-white">Mensaje</label>
-                        <textarea class="form-control" id="mensajeInput" rows="5" required></textarea>
-                    </div>
-                    <div class="text-start">
-                        <button type="submit" class="btn btn-info text-white fw-bold" data-bs-toggle="tooltip"
-                            data-bs-placement="right" title="Haz clic para enviar tu mensaje">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
+    <!-- Sección formulario de contacto -->
+    <section id="contacto" class="pt-5 pb-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">CONTACTO</h2>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-12">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreInput" class="form-label text-white">Nombre</label>
+                            <input type="text" class="form-control" id="nombreInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asuntoInput" class="form-label text-white">Asunto</label>
+                            <input type="text" class="form-control" id="asuntoInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeInput" class="form-label text-white">Mensaje</label>
+                            <textarea class="form-control" id="mensajeInput" rows="5" required></textarea>
+                        </div>
+                        <div class="text-start">
+                            <button type="submit" class="btn btn-info text-white" data-bs-toggle="tooltip"
+                                data-bs-placement="right" title="Haz clic para enviar tu mensaje">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Sección con enlaces a páginas externas -->
     <footer class="bg-info text-white text-center py-4">
         <div class="container">
             <div class="row align-items-center">
@@ -200,12 +218,14 @@
             </div>
         </div>
     </footer>
+    <!-- Recursos usados jQuery VS. 3.7.1, Bootstrap Bundle VS. 5.3.8, Font Awasome VS. 7-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ed8974064c.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
