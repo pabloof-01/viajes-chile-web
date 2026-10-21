@@ -2,10 +2,7 @@
 
 Sitio web estático de una agencia de viajes que promueve destinos turísticos de Chile. Está desarrollado con HTML, CSS, JavaScript y Bootstrap 5, y se adapta a computadores, tablets y celulares.
 
-🔗 **Ver en línea:** https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/
-
-<!-- Agrega aquí una captura de pantalla del sitio:
-![Vista del sitio](assets/img/captura.png) -->
+![Vista del sitio](assets/img/captura.png) 
 
 ## Secciones del sitio
 
@@ -52,7 +49,7 @@ Sitio web estático de una agencia de viajes que promueve destinos turísticos d
 
 1. Descarga el repositorio (botón **Code**, luego **Download ZIP**) o clónalo:
    ```bash
-   git clone https://github.com/TU-USUARIO/NOMBRE-DEL-REPO.git
+   git clone https://github.com/pabloof-01/viajes-chile-web.git
    ```
 2. Abre el archivo `index.html` en tu navegador.
 
