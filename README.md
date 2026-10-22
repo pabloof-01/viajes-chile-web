@@ -4,6 +4,10 @@ Sitio web estático de una agencia de viajes que promueve destinos turísticos d
 
 ![Vista del sitio](assets/img/captura.png) 
 
+## Demo
+
+Puedes ver el sitio publicado aquí: [https://pabloof-01.github.io/viajes-chile-web](https://pabloof-01.github.io/viajes-chile-web)
+
 ## Secciones del sitio
 
 - **Inicio:** carrusel con tres imágenes de paisajes de Chile.
@@ -62,3 +66,5 @@ El formulario de contacto es demostrativo: no envía mensajes, porque el sitio e
 ## Autor
 
 Pablo Olivero
+
+- GitHub: [@tu-usuario](https://github.com/pabloof-01)
